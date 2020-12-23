@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+:root {
+    --red: hsl(0, 100%, 74%);
+    --green: hsl(154, 59%, 51%);
+    --blue: hsl(248, 32%, 49%);
+    --darkBlue: hsl(249, 10%, 26%);
+    --grayishBlue: hsl(246, 25%, 77%);
+    --bg: url('../images/bg-intro-mobile.png');
+}
+
+body {
+    margin: 0;
+    background-image: var(--bg);
+    background-color: var(--red);
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    text-align: center;
+    color: white;
+    margin-top: 90px;
+}
+
+.header h1 {
+    font-weight: 700;
+    font-size: 27px;
+    margin: 10px;
+}
+
+.header p {
+    font-weight: 500;
+    margin: 20px 0;
+}
+
+.principal-div {
+    text-align: center;
+    margin: 65px 27px;
+}
+
+.price {
+    color: white;
+    background-color: var(--blue);
+    padding: 20px 0;
+    line-height: 30px;
+    font-weight: 400;
+    border-radius: 10px;
+    box-shadow: 0px 10px 2px  rgba(0, 0, 0, 0.17);
+    
+}
+
+.form {
+    margin-top: 30px;
+    padding: 10px 0;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.form input {
+    width: 240px;
+    margin: 10px 0;
+    outline: none;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid var(--grayishBlue);
+    color: var(--darkBlue);
+    font-weight: 700;
+}
+    
+
+.error-input {
+    border: 1px solid var(--red);
+}
+
+::-webkit-input-placeholder { color: var(--grayishBlue); }
+
+.error-icon {
+    margin: 0px 8px 0px -30px;
+}
+.error-msg {
+    font-family: 'Poppins', sans-serif;
+	font-size: 13px;
+	font-style: italic;
+	margin: -5px -70px 0px 0;
+	padding: 0;
+    color: var(--red);
+} 
+
+.hide {
+    display: none;
+}
+
+.form-child {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  
+    align-items: center;
+}
+
+
+.button {
+    margin: 10px 0;
+    width: 280px;
+    background-color: var(--green);
+    border: 0;
+    font-size: 15px;
+    color: white;
+    font-weight: 600;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 3px hsl(154, 42%, 30%);
+    outline: none;
+}
+
+.foot-form {
+    font-size: 12px;
+    color: var(--grayishBlue);
+    font-weight: 500;
+}
+
+.foot-form b {
+    color: var(--red);
+    font-weight: 700;
+}
+
+@media screen and (min-width: 480px) {
+    :root {
+        --bg: url('../images/bg-intro-desktop.png');
+    }
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .form-child {
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        margin: 0 20px;
+    }
+    .form-child input {
+        width: 500px;
+    }
+    .header {
+        text-align: start;
+        margin: 0 10px 0 100px;
+    }
+    .header h1 {
+        font-size: 50px;
+    }
+    .header p {
+        font-weight: 500;
+        margin: 20px 10px;
+    }
+    .error-icon {
+        transform: translateY(-50px) translateX(-10px);
+        align-self: flex-end;
+    }
+    .error-msg {
+        margin: -30px 0px 0px 0;
+        align-self: flex-end;
+    }
+}

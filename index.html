@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Learn to code by watching others</h1>
+    <p>
+      See how experienced developers solve 
+      problems in real-time. Watching <br/> 
+      scripted tutorials is great, but <br/>
+      understanding how developers think is invaluable. 
+    </p>
+  </div>
+
+  <div class="principal-div">
+    <div>
+      <p class="price">
+        <b>Try it free 7 days</b> then
+        $20/mo. thereafter
+      </p>
+    </div>
+    <div class="form">
+        <form action="#" class="form-child hiden" id="form" novalidate>
+          <input type="text" placeholder="First Name" id="first" required>
+          <div class="error-icon hide">
+            <img src="./images/icon-error.svg" height="24" width="24"  alt="error-icon">
+          </div>
+          <p class="error-msg hide"></p>    
+          
+          <input type="text" placeholder="Last Name" required id="lname">
+          <div class="error-icon hide">
+            <img src="./images/icon-error.svg" height="24" width="24"  alt="error-icon">
+          </div>          
+          <p class="error-msg hide"></p>
+
+          <input type="email" name="email" id="email"  placeholder="Email Address" required>
+          <div class="error-icon hide">
+            <img src="./images/icon-error.svg" height="24" width="24"  alt="error-icon">
+          </div>          
+          <p class="error-msg hide"></p>
+          
+          <input type="password" name="pass" id="password" placeholder="Password" required>
+          <div class="error-icon hide">
+            <img src="./images/icon-error.svg" height="24" width="24" alt="error-icon">
+          </div>          
+          <p class="error-msg hide"></p>
+        </form>
+
+      <div>
+        <button class="button" id="button" type="submit"> 
+          CLAIM YOUT FREE TRIAL
+        </button>
+      </div>
+      <p class="foot-form">
+        By clicking the button, you are agreeing to <br/> 
+        our <b>Terms and Services</b>
+      </p>
+    </div>
+  </div>
+  <script src="./main.js"></script>
+</body>
+</html>
